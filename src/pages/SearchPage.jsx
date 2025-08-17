@@ -43,27 +43,34 @@ function SearchPage() {
 
   // Buscar filmes quando o usuário digita algo
   useEffect(() => {
-    if (!query.trim()) return; // não faz nada se query está vazia
+  if (!query.trim()) return;
 
-    const fetchMovies = async () => {
-      setLoading(true);
-      setError("");
-      try {
-        const response = await api.get("/search/movie", { params: { query, page } });
-        if (response.data.results.length === 0) {
-          setError("Filme não encontrado.");
-        }
+  const fetchMovies = async () => {
+    setLoading(true);
+    setError("");
+    try {
+      const response = await api.get("/search/movie", { params: { query, page } });
+
+      if (response.data.results.length === 0) {
+        setError("Filme não encontrado.");
+        setMovies(sugestoes); // mantém as sugestões
+      } else {
         setMovies(response.data.results);
-        setTotalPages(response.data.total_pages);
-      } catch (err) {
-        setError("Erro ao buscar filmes.");
-      } finally {
-        setLoading(false);
+        setError("");
       }
-    };
 
-    fetchMovies();
-  }, [query, page]);
+      setTotalPages(response.data.total_pages);
+    } catch (err) {
+      setError("Erro ao buscar filmes.");
+      setMovies(sugestoes); // mantém sugestões caso dê erro
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchMovies();
+}, [query, page]);
+
 
   // Submeter busca
   const handleSearch = (e) => {
@@ -99,8 +106,8 @@ function SearchPage() {
           <input type="text" name="search" placeholder="Digite um filme..." />
           <button type="submit">Buscar</button>
         </form>
-        {loading && <p>Carregando...</p>}
-        {error && <p>{error}</p>}
+        {loading && <p className="message">Carregando...</p>}
+        {error && <p className="message">{error}</p>}
       </header>
 
       <main>

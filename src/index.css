@@ -33,6 +33,7 @@ header {
   background-color: #33608d;
   border-radius: 8px;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 header h1 {
@@ -151,4 +152,12 @@ nav a:hover {
 span {
   font-weight: bold;
   color: #ffffff;
+}
+
+/* MENSAGENS DE ERRO */
+
+.message {
+  margin-top: 15px; /* espaço acima da mensagem */
+  color: #ff4d4f;   /* vermelho para erro */
+  font-weight: bold;
 }
