@@ -113,7 +113,7 @@ TAREFA5PAGINADEFILMESMEREACT/
 ---
 
 ## 📬 Contato
-- GitHub: [github.com/CostaBic]
+- GitHub: github.com/CostaBic
 - E-mail: rcbcosta73@gmail.com
 - Linkedin: linkedin.com/in/raphaelcbianco
 
