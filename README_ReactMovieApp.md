@@ -77,17 +77,30 @@ npm start
 ## 📂 Estrutura do Projeto
 
 ```
-📦 react-movie-app
-┣ 📂 public
-┃ ┗ index.html
-┣ 📂 src
-┃ ┣ 📂 components
-┃ ┣ 📂 pages
-┃ ┣ 📂 services → API requests
-┃ ┗ index.js
-┣ .env
-┣ package.json
-┗ README.md
+TAREFA5PAGINADEFILMESMEREACT/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── MovieCard.jsx
+│   │   └── Pagination.jsx
+│   ├── pages/
+│   │   ├── DetailsPage.jsx
+│   │   ├── FavoritesPage.jsx
+│   │   └── SearchPage.jsx
+│   ├── services/
+│   │   └── api.js
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .env
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+└── vite.config.js
 ```
 
 ---
@@ -100,8 +113,9 @@ npm start
 ---
 
 ## 📬 Contato
-- GitHub: [github.com/SEU_USUARIO](https://github.com/SEU_USUARIO)
-- E-mail: SEU_EMAIL_AQUI
+- GitHub: [github.com/CostaBic]
+- E-mail: rcbcosta73@gmail.com
+- Linkedin: linkedin.com/in/raphaelcbianco
 
 ---
 
