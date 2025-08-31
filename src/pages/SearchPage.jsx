@@ -5,27 +5,28 @@ import Pagination from "../components/Pagination";
 
 // Sugestões iniciais (já no formato esperado pelo MovieCard)
 const sugestoes = [
-  { id: 21, title: "Guardians of the Galaxy", poster_path: "https://image.tmdb.org/t/p/w200/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg" }, // substitui id:1
-  { id: 2, title: "The Dark Knight", poster_path: "https://image.tmdb.org/t/p/w200/1hRoyzDtpgMU7Dz4JF22RANzQO7.jpg" },
-  { id: 3, title: "Interstellar", poster_path: "https://image.tmdb.org/t/p/w200/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg" },
-  { id: 4, title: "Avengers: Endgame", poster_path: "https://image.tmdb.org/t/p/w200/or06FN3Dka5tukK1e9sl16pB3iy.jpg" },
-  { id: 27, title: "Aquaman", poster_path: "https://image.tmdb.org/t/p/w200/xLPffWMhMj1l50ND3KchMjYoKmE.jpg" },
-  { id: 6, title: "Forrest Gump", poster_path: "https://image.tmdb.org/t/p/w200/saHP97rTPS5eLmrLQEcANmKrsFl.jpg" },
-  { id: 7, title: "The Matrix", poster_path: "https://image.tmdb.org/t/p/w200/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" },
-  { id: 8, title: "Gladiator", poster_path: "https://image.tmdb.org/t/p/w200/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg" },
-  { id: 23, title: "Black Panther", poster_path: "https://image.tmdb.org/t/p/w200/uxzzxijgPIY7slzFvMotPv8wjKA.jpg" }, // substitui id:9
-  { id: 10, title: "The Lion King", poster_path: "https://image.tmdb.org/t/p/w200/2bXbqYdUdNVa8VIWXVfclP2ICtT.jpg" },
-  { id: 11, title: "The Godfather", poster_path: "https://image.tmdb.org/t/p/w200/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" },
-  { id: 12, title: "Pulp Fiction", poster_path: "https://image.tmdb.org/t/p/w200/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg" },
-  { id: 13, title: "The Shawshank Redemption", poster_path: "https://image.tmdb.org/t/p/w200/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg" },
-  { id: 29, title: "Thor: Ragnarok", poster_path: "https://image.tmdb.org/t/p/w200/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg" },
-  { id: 15, title: "The Avengers", poster_path: "https://image.tmdb.org/t/p/w200/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg" },
-  { id: 16, title: "Iron Man", poster_path: "https://image.tmdb.org/t/p/w200/78lPtwv72eTNqFW9COBYI0dWDJa.jpg" },
-  { id: 17, title: "Spider-Man", poster_path: "https://image.tmdb.org/t/p/w200/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" },
-  { id: 25, title: "Captain Marvel", poster_path: "https://image.tmdb.org/t/p/w200/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg" }, // substitui id:18
-  { id: 19, title: "The Lord of the Rings: The Fellowship of the Ring", poster_path: "https://image.tmdb.org/t/p/w200/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg" },
-  { id: 20, title: "Harry Potter and the Sorcerer's Stone", poster_path: "https://image.tmdb.org/t/p/w200/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg" }
+  { id: 118340, title: "Guardians of the Galaxy", poster_path: "/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg" },
+  { id: 155, title: "The Dark Knight", poster_path: "/1hRoyzDtpgMU7Dz4JF22RANzQO7.jpg" },
+  { id: 157336, title: "Interstellar", poster_path: "/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg" },
+  { id: 299534, title: "Avengers: Endgame", poster_path: "/or06FN3Dka5tukK1e9sl16pB3iy.jpg" },
+  { id: 297802, title: "Aquaman", poster_path: "/xLPffWMhMj1l50ND3KchMjYoKmE.jpg" },
+  { id: 13, title: "Forrest Gump", poster_path: "/saHP97rTPS5eLmrLQEcANmKrsFl.jpg" },
+  { id: 603, title: "The Matrix", poster_path: "/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" },
+  { id: 98, title: "Gladiator", poster_path: "/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg" },
+  { id: 284054, title: "Black Panther", poster_path: "/uxzzxijgPIY7slzFvMotPv8wjKA.jpg" },
+  { id: 420818, title: "The Lion King", poster_path: "/2bXbqYdUdNVa8VIWXVfclP2ICtT.jpg" },
+  { id: 238, title: "The Godfather", poster_path: "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" },
+  { id: 680, title: "Pulp Fiction", poster_path: "/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg" },
+  { id: 278, title: "The Shawshank Redemption", poster_path: "/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg" },
+  { id: 284053, title: "Thor: Ragnarok", poster_path: "/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg" },
+  { id: 24428, title: "The Avengers", poster_path: "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg" },
+  { id: 1726, title: "Iron Man", poster_path: "/78lPtwv72eTNqFW9COBYI0dWDJa.jpg" },
+  { id: 557, title: "Spider-Man", poster_path: "/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" },
+  { id: 299537, title: "Captain Marvel", poster_path: "/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg" },
+  { id: 120, title: "The Lord of the Rings: The Fellowship of the Ring", poster_path: "/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg" },
+  { id: 671, title: "Harry Potter and the Sorcerer's Stone", poster_path: "/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg" }
 ];
+
 
 function SearchPage() {
   const [query, setQuery] = useState("");

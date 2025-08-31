@@ -7,9 +7,11 @@ function MovieCard({ movie, isFavorite, toggleFavorite }) {
 
   return (
     <div className="movie-card">
+       <Link to={`/details/${movie.id}`}>
       <img src={posterUrl} alt={movie.title} />
       <h3>{movie.title}</h3>
       <p>{movie.release_date?.slice(0, 4)}</p>
+      </Link>
       <Link to={`/details/${movie.id}`}>
         <button>Detalhes</button>
       </Link>
